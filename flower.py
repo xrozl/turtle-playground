@@ -125,19 +125,25 @@ class Pen:
     def sp(x, y):
         turtle.setpos(x, y)
 
-p: Pen = Pen
-sc: turtle.Screen = turtle.Screen()
-sc.setup(width=600, height=600)
-tt: turtle.Turtle = turtle.Turtle()
-tt.pensize(2)
-tt.speed(100)
-n = -1
-for angle in range(0, 360, 30):
-    n =+ 1
-    if n == 5:
-        n =- 1
-    colors: list = Color.getAllWithout(Color.WHITE)
-    p.color(colors[n])
-    p.seth(angle)
-    p.circle(60)
-p.up
+# main function
+def main():
+    p: Pen = Pen
+    sc: turtle.Screen = turtle.Screen()
+    sc.setup(width=600, height=600)
+    tt: turtle.Turtle = turtle.Turtle()
+    tt.pensize(2)
+    tt.speed(100)
+    n = -1
+    for angle in range(0, 360, 30):
+        n =+ 1
+        if n == 5:
+            n =- 1
+        colors: list = Color.getAllWithout(Color.WHITE)
+        p.color(colors[n])
+        p.seth(angle)
+        p.circle(60)
+    p.up
+
+if __name__ == '__main__':
+    main()
+    time.sleep(10)
