@@ -38,7 +38,7 @@ sc.setup(width=600, height=600)
 t: turtle = p.t()
 t.pensize(2)
 t.speed(0)
-offset = (-100, 100)
+offset = (-140, 120)
 colors = [
     "#ffffff",
     "#C5A4CD",
@@ -57,7 +57,7 @@ for i in range(len(meta)):
         if int(meta_split[k-1]) == 0:
             continue
         t.penup()
-        t.setpos(-140+k * 10, 120+i * -10)
+        t.setpos(offset[0]+k * 10, offset[1]+i * -10)
         t.pendown()
         t.fillcolor(colors[int(meta_split[k-1])])
         t.pencolor(colors[int(meta_split[k-1])])
