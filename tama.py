@@ -43,10 +43,10 @@ t.pensize(2)
 t.speed(0)
 offset = (-100, 100)
 colors = [
-    "#ffffff",
-    "#658CCA",
-    "#486B9E",
-    "#8CADF2",
+    "#ffffff", # 0
+    "#658CCA", # 1
+    "#486B9E", # 2
+    "#8CADF2", # 3...
     "#ECEDEA",
     "#404143",
     "#C9B984",
